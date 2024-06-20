@@ -52,32 +52,56 @@ const Navbar = ({ handleClick, openNav }) => {
           <nav className="flex sm:hidden w-screen h-screen justify-center">
             <ul className="flex flex-col  space-y-8 text-2xl ">
               <li>
-                <a href="#home" className="hover:text-blue-100">
+                <a
+                  href="#home"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-blue-100">
+                <a
+                  href="#about"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-blue-100">
+                <a
+                  href="#skills"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-blue-100">
+                <a
+                  href="#projects"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#experience" className="hover:text-blue-100">
+                <a
+                  href="#experience"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   Experience
                 </a>
               </li>
               <li>
-                <a href="" className="hover:text-blue-100">
+                <a
+                  href=""
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
                   Resume
                 </a>
               </li>

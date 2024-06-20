@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <div>
       <Navbar handleClick={handleClick} openNav={openNav} />
+      <Home />
     </div>
   );
 };
