@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 
 const App = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Experience />
     </div>
   );
 };
