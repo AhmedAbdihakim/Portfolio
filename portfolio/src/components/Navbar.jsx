@@ -32,6 +32,11 @@ const Navbar = ({ handleClick, openNav }) => {
             </a>
           </li>
           <li>
+            <a href="#contact" className="hover:text-blue-100">
+              Contact
+            </a>
+          </li>
+          <li>
             <a href="" className="hover:text-blue-100">
               Resume
             </a>
@@ -94,6 +99,15 @@ const Navbar = ({ handleClick, openNav }) => {
                   onClick={handleClick}
                 >
                   Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-blue-100"
+                  onClick={handleClick}
+                >
+                  Contact
                 </a>
               </li>
               <li>
