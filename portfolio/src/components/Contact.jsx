@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mox6dtb",
+        "template_99a5etz",
+        form.current,
+        "ODNpoZaMmqwUgDnwp"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="py-16">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl sm:text-5xl font-bold mb-8 text-center">
           Contact Me
         </h2>
-        <form className="max-w-lg mx-auto">
+        <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
           <div className="mb-6">
             <label htmlFor="name" className="block text-lg mb-2">
               Name

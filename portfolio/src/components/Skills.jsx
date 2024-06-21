@@ -9,6 +9,7 @@ import {
   FaFileCode,
 } from "react-icons/fa";
 import { DiResponsive, DiCssdeck } from "react-icons/di";
+import { SiRedux, SiTailwindcss, SiBootstrap } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -25,6 +26,9 @@ const Skills = () => {
                 <FaReact className="inline-block mr-2 text-xl" /> React
               </li>
               <li>
+                <SiRedux className="inline-block mr-2 text-xl" /> Redux
+              </li>
+              <li>
                 <FaJs className="inline-block mr-2 text-xl" /> JavaScript (ES6+)
               </li>
               <li>
@@ -32,6 +36,13 @@ const Skills = () => {
               </li>
               <li>
                 <FaCss3 className="inline-block mr-2 text-xl" /> CSS3
+              </li>
+              <li>
+                <SiTailwindcss className="inline-block mr-2 text-xl" /> Tailwind
+                CSS
+              </li>
+              <li>
+                <SiBootstrap className="inline-block mr-2 text-xl" /> Bootstrap
               </li>
               <li>
                 <DiResponsive className="inline-block mr-2 text-xl" />{" "}
