@@ -42,6 +42,7 @@ const Contact = () => {
               name="name"
               className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black focus:outline-none focus:border-blue-500"
               placeholder="Your Name"
+              required
             />
           </div>
           <div className="mb-6">
@@ -54,6 +55,7 @@ const Contact = () => {
               name="email"
               className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black focus:outline-none focus:border-blue-500"
               placeholder="Your Email"
+              required
             />
           </div>
           <div className="mb-6">
@@ -66,6 +68,7 @@ const Contact = () => {
               rows="5"
               className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black focus:outline-none focus:border-blue-500"
               placeholder="Your Message"
+              required
             ></textarea>
           </div>
           <button
