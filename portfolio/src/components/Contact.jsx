@@ -10,7 +10,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_mox6dtb",
-        "template_99a5etz",
+        "template_5wqczzc",
         form.current,
         "ODNpoZaMmqwUgDnwp"
       )
@@ -39,7 +39,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              name="name"
+              name="from_name"
               className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black focus:outline-none focus:border-blue-500"
               placeholder="Your Name"
               required
@@ -52,7 +52,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              name="email"
+              name="email_id"
               className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black focus:outline-none focus:border-blue-500"
               placeholder="Your Email"
               required

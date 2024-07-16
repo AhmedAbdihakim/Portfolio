@@ -1,5 +1,7 @@
 import React from "react";
 import hero from "../assets/Hero.png";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -21,6 +23,17 @@ const Home = () => {
         <button className="mt-6 px-8 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
           <a href="#contact">Contact Me</a>
         </button>
+        <div className="flex pt-4 space-x-6">
+          <a href="https://github.com/AhmedAbdihakim" className="text-3xl">
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmed-abdihakim02/"
+            className="text-3xl"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
       <div className="order-1 sm:order-2  justify-center items-center h-full hidden sm:flex">
         <img
